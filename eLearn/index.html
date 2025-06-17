@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <span>HAVE ANY QUESTIONS?</span>
+                <span>(009) 35475 6688933 32</span>
+                <span>info@elaerntemplate.com</span>
+            </div>
+            <a href="#" class="register-login">REGISTER / LOGIN</a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text"><span class="e">e</span>LEARN</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">COURSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Learn Without Limits</h1>
+            <p class="hero-subtitle">Discover thousands of courses and start your learning journey today</p>
+            <a href="#" class="cta-button">Start Learning Now</a>
+        </div>
+    </section>
+
+
+    <section class="choose-course-section">
+        <div class="course-content">
+            <h2 class="section-title">Choose your course</h2>
+            <p class="section-description">
+                Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras
+                laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum
+                dui, ac tempor lorem convallis ut
+            </p>
+
+            <div class="course-search-form">
+                <div class="search-row">
+                    <div class="form-group">
+                        <select class="form-select" id="courseSelect">
+                            <option value="">Course</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="business-management">Business Management</option>
+                            <option value="photography">Photography</option>
+                            <option value="mobile-development">Mobile Development</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select class="form-select" id="levelSelect">
+                            <option value="">Level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" class="search-btn" onclick="searchCourse()">SEARCH COURSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-platform-section">
+        <div class="platform-content">
+            <h2 class="section-title">Join Our Platform Today</h2>
+            <p class="section-description">
+                Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras
+                laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum
+                dui, ac tempor lorem convallis ut
+            </p>
+
+            <div class="join-form-container">
+                <form class="join-form" id="joinForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select class="form-select" required>
+                                <option value="">Select Your Interest</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="business-management">Business Management</option>
+                                <option value="photography">Photography</option>
+                                <option value="mobile-development">Mobile Development</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select">
+                                <option value="">Experience Level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="expert">Expert</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-textarea"
+                            placeholder="Tell us about your learning goals and what you hope to achieve..."></textarea>
+                    </div>
+
+                    <button type="submit" class="join-btn">Join Our Platform</button>
+                </form>
+
+                <div class="benefits-section">
+                    <h3 class="benefits-title">Why Join Our Platform?</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📚</div>
+                            <div class="benefit-title">Expert-Led Courses</div>
+                            <div class="benefit-description">Learn from industry professionals with real-world
+                                experience</div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎯</div>
+                            <div class="benefit-title">Personalized Learning</div>
+                            <div class="benefit-description">Customized learning paths based on your goals and skill
+                                level</div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🏆</div>
+                            <div class="benefit-title">Certificates</div>
+                            <div class="benefit-description">Earn recognized certificates upon course completion</div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💬</div>
+                            <div class="benefit-title">Community Support</div>
+                            <div class="benefit-description">Connect with fellow learners and get help when needed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text"><span class="e">e</span>LEARN</span>
+                </div>
+                <p class="description">
+                    Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar.
+                </p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon google">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="social-icon pinterest">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="#" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick menu</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Facts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Teachers</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <span class="contact-label">Address:</span>
+                    1481 Creekside Lane Avila Beach, CA 93424
+
+                    <span class="contact-label">Phone:</span>
+                    +53 345 7953 32453
+
+                    <span class="contact-label">Email:</span>
+                    yourmail@gmail.com
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                Copyright ©2025 All rights reserved | This template is made with ♡ by <a href="#">Colorlib</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
